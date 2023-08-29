@@ -1,3 +1,179 @@
 // IMPORT BLOCKS
 
+@import './blocks/header';
 
+
+
+// NORMALISE
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #161617;
+  color: white;
+}
+
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+// FONTS 
+
+
+
+
+
+
+@font-face {
+    font-family: "light";
+    src: url(./fonts/light.woff);
+}
+
+
+@font-face {
+    font-family: "regular";
+    src: url(./fonts/regular.woff);
+}
+
+
+
+
+@font-face {
+    font-family: "medium";
+    src: url(./fonts/medium.woff);
+}
+
+
+@font-face {
+    font-family: "semibold";
+    src: url(./fonts/semibold.woff);
+}
+
+
+
+@font-face {
+    font-family: "bold";
+    src: url(./fonts/bold.woff);
+}
+
+
+
+
+a {
+    font-family: 'light';
+}
+
+
+
+
+
+
+
+// MY BASE
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'regular';
+}
+
+a:hover {
+    color: #0071e3;
+    
+}
+
+.disabled {
+    color: #4c4c4e;
+    cursor: default;
+    font-size: 13px;
+}
+.disabled:hover {
+    color: #4c4c4e;
+    font-size: 13px;
+}
+
+h2 {
+    font-family: "semibold";
+}
+.but-bg {
+    color: white;
+    background-color: #0071e3;
+    border-radius: 980px;
+    padding: 5px 10px;
+}
+.but-bg:hover {
+    color: white;
+    background-color: #177fe7;
+}
