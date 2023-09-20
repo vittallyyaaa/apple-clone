@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav-container {
   background-color: rgba(0, 0, 0, 0.8);
   height: 44px;
@@ -339,10 +340,10 @@ nav .desktop-nav li a:hover {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: #000;
+    background-color: #1b1b1b;
     justify-content: start;
     overflow: hidden;
-    z-index: -1;
+    z-index: 100;
     transition: all 1000ms ease;
   }
   .nav-container.active .desktop-nav {
@@ -387,6 +388,7 @@ nav .desktop-nav li a:hover {
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 200;
   }
   nav .menu-icon {
     position: relative;
@@ -401,6 +403,7 @@ nav .desktop-nav li a:hover {
     transition-property: transform, top;
     transition-delay: 0ms, 160ms;
     transition-duration: 200ms;
+    z-index: 200;
   }
   nav .menu-icon .line-1 {
     top: -4px;
@@ -545,39 +548,4890 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.under-header {
-  height: 50px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  background: #000;
-  color: #fff;
+@media (max-width: 1150px) {
+  .under-header {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+  }
+  .under-header .under-header-cont {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 15;
+  }
+  .under-header .under-header-cont h2 {
+    margin-left: 30.5px;
+  }
+  .under-header .under-header-cont .but-under-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30.5px;
+  }
+  .under-header .under-header-cont .but-under-header a {
+    margin-left: 20px;
+  }
+  .rte {
+    margin-top: 20000px;
+  }
+  .fixed {
+    position: fixed;
+  }
 }
-.under-header .under-header-cont {
-  display: flex;
-  width: 980px;
-  height: 50px;
-  align-items: center;
+@media (min-width: 1150px) {
+  .under-header {
+    height: 50px;
+    z-index: 300;
+    position: sticky;
+    top: 0;
+    left: 0;
+    position: -webkit-sticky;
+    background: #000;
+    color: #fff;
+  }
+  .under-header .under-header-cont {
+    display: flex;
+    width: 980px;
+    height: 50px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .under-header .under-header-cont .but-under-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+  .under-header .under-header-cont .but-under-header a {
+    margin-left: 20px;
+  }
+  .rte {
+    margin-top: 20000px;
+  }
+  .fixed {
+    position: fixed;
+  }
+}
+@media (max-width: 701px) {
+  .but-not-active {
+    display: none;
+  }
+  .sec-center {
+    display: block;
+  }
+}
+@media (min-width: 700px) {
+  .sec-center {
+    display: none;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .under-header2 {
+    width: 100%;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(29, 29, 31, 0.72);
+    z-index: 0;
+  }
+  .under-header2 p {
+    font-family: "regular";
+    font-size: 21px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .under-header2 p span a {
+    font-size: 21px;
+    color: #2997ff;
+  }
+  .under-header2 p span a:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .under-header2 {
+    width: 100%;
+    background: rgba(29, 29, 31, 0.72);
+    z-index: -1;
+  }
+  .under-header2 p {
+    font-family: "regular";
+    font-size: 13px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .under-header2 p span a {
+    font-size: 13px;
+    color: #2997ff;
+  }
+  .under-header2 p span a:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 999px) {
+  .colors.bg {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: 2;
+    transition: 0.2s;
+  }
+  .colors {
+    transition: 0.2s;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .colors.bg {
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(29, 29, 31, 0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: 2;
+    transition: 0.2s;
+  }
+  .colors {
+    transition: 0.2s;
+  }
+  .small {
+    display: none;
+  }
+  .colors {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .colors .bts {
+    margin-left: auto;
+    margin-top: 50px;
+    z-index: 200;
+  }
+  .colors .purple-btn {
+    background-color: #594f63;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    float: left;
+    cursor: pointer;
+  }
+  .colors .purple-btn:checked {
+    border: #0071e3 solid 1px;
+    cursor: auto;
+  }
+  .colors .gold-btn {
+    background-color: #f4e8ce;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    float: left;
+    cursor: pointer;
+  }
+  .colors .gold-btn:checked {
+    border: #0071e3 solid 1px;
+    height: 25px;
+    width: 25px;
+    cursor: auto;
+  }
+  .colors .silver-btn {
+    background-color: #f0f2f2;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    float: left;
+    cursor: pointer;
+  }
+  .colors .silver-btn:checked {
+    border: #0071e3 solid 1px;
+    height: 25px;
+    width: 25px;
+    cursor: auto;
+  }
+  .colors .grey-btn {
+    background-color: #403e35;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .colors .grey-btn:checked {
+    border: #0071e3 solid 1px;
+    height: 25px;
+    width: 25px;
+    cursor: auto;
+  }
+  .container {
+    width: 100%;
+    height: 741px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -65px;
+    z-index: -1;
+  }
+  .container h1 {
+    font-family: "regular";
+    font-size: 70px;
+    margin-top: -70px;
+  }
+  html {
+    background: #000000;
+  }
+  html .hero-intro-video-video {
+    width: 100%;
+    margin-top: 123px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 2s;
+  }
+  html .purple {
+    opacity: 0;
+    margin-top: -520px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  html .gold {
+    opacity: 0;
+    margin-top: -513px;
+    width: 100%;
+    max-width: 1000px;
+    transition: none;
+  }
+  html .silver {
+    opacity: 0;
+    margin-top: -512px;
+    width: 100%;
+    position: relative;
+    max-width: 1000px;
+  }
+  html .grey {
+    opacity: 0;
+    margin-top: -513px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  html .purple-btn:before {
+    margin-left: -100px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  html .gold-btn:before {
+    margin-left: -81px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  html .silver-btn:before {
+    margin-left: -121px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  html .grey-btn:before {
+    margin-left: -149px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.purple {
+    transition: all 1s;
+  }
+  html.purple .hero-intro-video-video {
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.purple .purple-btn:checked {
+    border: #0071e3 solid 1px;
+  }
+  html.purple .purple-btn:before {
+    content: "Deep Purple";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 100%;
+    transition-delay: 1s;
+  }
+  html.purple .gold-btn:before {
+    content: "Gold";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition-delay: 1s;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.purple .silver-btn:before {
+    content: "Silver";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition-delay: 1s;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.purple .grey-btn:before {
+    content: "Grey";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.purple .purple {
+    opacity: 100%;
+    transition: all 0.6s;
+    transition-delay: 1s;
+  }
+  html.purple .gold {
+    opacity: 0%;
+    transition: all 0.6s;
+    pointer-events: none;
+  }
+  html.purple .grey {
+    opacity: 0%;
+    transition: all 0.6s;
+    pointer-events: none;
+  }
+  html.purple .silver {
+    opacity: 0%;
+    transition: all 0.6s;
+    pointer-events: none;
+  }
+  html.gold {
+    transition: all 0.1s;
+  }
+  html.gold .hero-intro-video-video {
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.gold .purple-btn {
+    float: left;
+  }
+  html.gold .purple-btn:before {
+    content: "";
+  }
+  html.gold .purple {
+    opacity: 0;
+    transition: all 1s;
+  }
+  html.gold .gold {
+    opacity: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+  html.gold .grey {
+    opacity: 0%;
+    transition: all 0.6s;
+  }
+  html.gold .silver {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.gold .gold-btn:before {
+    content: "Gold";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 100%;
+    transition-delay: 1s;
+  }
+  html.gold .purple-btn:before {
+    content: "Deep Purple";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.gold .silver-btn:before {
+    content: "Silver";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition-delay: 1s;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.gold .grey-btn:before {
+    content: "Grey";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+    transition-delay: 1s;
+  }
+  html.silver .gold-btn:before {
+    content: "Gold";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.silver .purple-btn:before {
+    content: "Deep Purple";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.silver .silver-btn:before {
+    content: "Silver";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 100%;
+    transition-delay: 1s;
+  }
+  html.silver .grey-btn:before {
+    content: "Grey";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.silver .hero-intro-video-video {
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.silver .gold {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.silver .grey {
+    opacity: 0%;
+    transition: all 0.6s;
+  }
+  html.silver .purple {
+    opacity: 0;
+    transition: all 1s;
+  }
+  html.silver .silver {
+    opacity: 100%;
+    transition: all 1.2s;
+    transition-delay: 1s;
+  }
+  html.grey .hero-intro-video-video {
+    opacity: 0;
+    transition: all 1s;
+    pointer-events: none;
+  }
+  html.grey .gold {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.grey .purple {
+    opacity: 0;
+    transition: all 1s;
+  }
+  html.grey .silver {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.grey .grey {
+    opacity: 100%;
+    transition: all 1.2s;
+    transition-delay: 1s;
+  }
+  html.grey .grey-btn:before {
+    content: "Grey";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition-delay: 1s;
+    transition: all 1s;
+    opacity: 100%;
+    transition-delay: 1s;
+  }
+  html.grey .gold-btn:before {
+    content: "Gold";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.grey .purple-btn:before {
+    content: "Deep Purple";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+  html.grey .silver-btn:before {
+    content: "Silver";
+    color: white;
+    position: relative;
+    font-family: "regular";
+    float: left;
+    transition: all 1s;
+    opacity: 0%;
+  }
+}
+@media screen and (max-width: 999px) {
+  .colors {
+    width: 100vw;
+    display: flex;
+    float: left;
+    height: 50px;
+    margin-top: 490px;
+    position: sticky;
+    top: 50px;
+    left: 0;
+  }
+  .colors .bts {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .colors .purple-btn {
+    background-color: #594f63;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    float: left;
+    cursor: pointer;
+  }
+  .colors .purple-btn:checked {
+    border: #0071e3 solid 1px;
+    cursor: auto;
+  }
+  .colors .gold-btn {
+    background-color: #f4e8ce;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    float: left;
+    cursor: pointer;
+  }
+  .colors .gold-btn:checked {
+    border: #0071e3 solid 1px;
+    height: 25px;
+    width: 25px;
+    cursor: auto;
+  }
+  .colors .silver-btn {
+    background-color: #f0f2f2;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    float: left;
+    cursor: pointer;
+  }
+  .colors .silver-btn:checked {
+    border: #0071e3 solid 1px;
+    height: 25px;
+    width: 25px;
+    cursor: auto;
+  }
+  .colors .grey-btn {
+    background-color: #403e35;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 980px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .colors .grey-btn:checked {
+    border: #0071e3 solid 1px;
+    height: 25px;
+    width: 25px;
+    cursor: auto;
+  }
+  .container {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -490px;
+    float: left;
+  }
+  .container h1 {
+    font-family: "regular";
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  html {
+    background: #000000;
+    transition: all 1s;
+  }
+  html .purple-small {
+    opacity: 0%;
+    margin-top: -268px;
+  }
+  html .silver-small {
+    opacity: 0%;
+    margin-top: -268px;
+  }
+  html .gold-small {
+    opacity: 0%;
+    margin-top: -268px;
+  }
+  html .grey-small {
+    opacity: 0%;
+    margin-top: -268px;
+  }
+  html .hero-intro-video-video {
+    display: none;
+    margin-top: 123px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 2s;
+  }
+  html .hero-intro-video-video2 {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  html .hero-intro-video-video {
+    display: none;
+    margin-top: 123px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 2s;
+  }
+  html .purple {
+    opacity: 0;
+    margin-top: -520px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  html .gold {
+    opacity: 0;
+    margin-top: -520px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  html .silver {
+    opacity: 0;
+    margin-top: -520px;
+    width: 100%;
+    position: relative;
+    max-width: 1000px;
+  }
+  html .grey {
+    opacity: 0;
+    margin-top: -520px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  html.purple .hero-intro-video-video2 {
+    opacity: 0;
+    transition: all 1s;
+    pointer-events: none;
+  }
+  html.purple .purple-btn:checked {
+    border: #0071e3 solid 1px;
+  }
+  html.purple .purple-small {
+    opacity: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+  html.purple .gold-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.purple .silver-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.purple .grey-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.gold .hero-intro-video-video2 {
+    transition: all 1s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.gold .purple-btn {
+    float: left;
+  }
+  html.gold .silver-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.gold .purple-btn:before {
+    content: "";
+  }
+  html.gold .purple-small {
+    opacity: 0;
+    transition: all 1s;
+  }
+  html.gold .gold-small {
+    opacity: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+  html.gold .grey-small {
+    opacity: 0;
+    transition: 1s all;
+  }
+  html.silver .hero-intro-video-video2 {
+    opacity: 0;
+    transition: 1s all;
+  }
+  html.silver .grey-small {
+    opacity: 0;
+    transition: 1s all;
+  }
+  html.silver .hero-intro-video-video {
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.silver .gold-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.silver .grey-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.silver .purple-small {
+    opacity: 0;
+    transition: all 1s;
+  }
+  html.silver .silver-small {
+    opacity: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+  html.grey .hero-intro-video-video2 {
+    opacity: 0;
+    transition: all 1s;
+    pointer-events: none;
+  }
+  html.grey .gold-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.grey .grey-small {
+    opacity: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+  html.grey .purple-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+  html.grey .silver-small {
+    opacity: 0%;
+    transition: all 1s;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .second-page {
+    background-color: #161617;
+    width: 100%;
+  }
+  .second-page .min-purple, .second-page .min-gold, .second-page .min-silver, .second-page .min-grey {
+    display: none;
+  }
+  .second-page .under-p {
+    display: none;
+  }
+  .second-page .second-page-content .blocks {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .second-page .second-page-content h2 {
+    color: #cecece;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .second-page .second-page-content p {
+    font-family: "regular";
+    color: #86868b;
+    font-size: 19px;
+    text-align: center;
+  }
+  .second-page .second-page-content .but-bg {
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .second-page .second-page-content .buy {
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .second-page .second-page-content .left-side {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-page .second-page-content .left-side .dynamic-island {
+    background-color: black;
+    width: 500px;
+    border-radius: 30px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .purple-island {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .gold-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .silver-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .grey-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .head-island {
+    padding-top: 30px;
+    font-family: "semibold";
+    font-size: 40px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .second-page .second-page-content .left-side .battery {
+    width: 300px;
+    height: 200px;
+    border: #cecece solid 2px;
+  }
+  .second-page .second-page-content .right-side .photo {
+    width: 300px;
+    height: 254px;
+    border-radius: 30px;
+    margin-left: 20px;
+  }
+  .second-page .second-page-content .right-side .photo p {
+    color: white;
+    text-align: left;
+    padding-top: 180px;
+    margin-left: 30px;
+  }
+  .second-page .second-page-content .right-side .processor {
+    width: 300px;
+    height: 254px;
+    border-radius: 30px;
+    background-color: black;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .second-page .second-page-content .right-side .processor h3 {
+    padding-top: 30px;
+    color: transparent;
+    font-family: "semibold";
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 1.1;
+  }
+  .second-page .second-page-content .right-side .processor img {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .second-page .second-page-content .blocks2 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks2 .left-side2 {
+    margin-top: 20px;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks2 .left-side2 .battery {
+    width: 300px;
+    height: 254px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 0px;
+  }
+  .second-page .second-page-content .blocks2 .left-side2 .battery .battery-head {
+    padding-left: 30px;
+    font-family: "regular";
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .second-page .second-page-content .blocks2 .left-side2 .battery .battery-head span {
+    font-size: 80px;
+    line-height: 75px;
+  }
+  .second-page .second-page-content .blocks2 .right-side2 .film {
+    width: 500px;
+    height: 254px;
+    background-color: rebeccapurple;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-page .second-page-content .blocks2 .right-side2 .film h1 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-family: "regular";
+  }
+  .second-page .second-page-content .blocks2 .right-side2 .film h2 {
+    font-size: 20px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+  .second-page .second-page-content .blocks3 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks3 .left-side3 {
+    margin-top: 20px;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks3 .left-side3 .fast {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 300px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .second-page .second-page-content .blocks3 .left-side3 .fast .fast-video {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .second-page .second-page-content .blocks3 .right-side3 {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+  }
+  .second-page .second-page-content .blocks3 .right-side3 .always {
+    width: 500px;
+    background-color: black;
+    border-radius: 30px;
+  }
+  .second-page .second-page-content .blocks3 .right-side3 .always .always-head {
+    text-align: center;
+    font-family: "regular";
+    margin-top: 30px;
+  }
+  .second-page .second-page-content .blocks3 .right-side3 .always img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .blocks4 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks4 .ceramic {
+    width: 500px;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 600px;
+  }
+  .second-page .second-page-content .blocks4 .ceramic h1 {
+    font-family: "regular";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .second-page .second-page-content .blocks4 .ceramic .ceramic-head {
+    text-align: center;
+    font-size: 50px;
+    font-family: "regular";
+    padding-top: 0;
+  }
+  .second-page .second-page-content .blocks4 .ceramic img {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  .second-page .second-page-content .blocks4 .water {
+    width: 300px;
+    margin-left: 20px;
+    background-color: #fff;
+    height: 35 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 290px;
+  }
+  .second-page .second-page-content .blocks4 .water h1 {
+    text-align: center;
+    font-family: "regular";
+    padding-top: 100px;
+    font-size: 50px;
+  }
+  .second-page .second-page-content .blocks4 .water p {
+    margin-top: 80px;
+  }
+  .second-page .second-page-content .blocks4 .selfie {
+    width: 300px;
+    margin-left: 20px;
+    background-color: #000000;
+    height: 35 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 290px;
+    overflow: hidden;
+  }
+  .second-page .second-page-content .blocks4 .selfie p {
+    color: white;
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  .second-page .second-page-content .blocks4 .selfie img {
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  .second-page .second-page-content .blocks5 {
+    width: 820px;
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  .second-page .second-page-content .blocks5 .top {
+    width: 100%;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks5 .top h1 {
+    font-family: "regular";
+  }
+  .second-page .second-page-content .blocks5 .top .left-top {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .second-page .second-page-content .blocks5 .top .right-top {
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .second-page .second-page-content .blocks5 .bottom {
+    width: 100%;
+    display: flex;
+  }
+  .second-page .second-page-content .blocks5 .bottom .left-bottom {
+    width: 50%;
+  }
+  .second-page .second-page-content .blocks5 .bottom .left-bottom img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .blocks5 .bottom .right-bottom {
+    width: 50%;
+  }
+  .second-page .second-page-content .blocks5 .bottom .right-bottom img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+  }
+}
+@media screen and (min-width: 877px) and (max-width: 999px) {
+  .second-page {
+    background-color: #161617;
+    width: 100%;
+    margin-top: 600px;
+  }
+  .second-page .min-purple, .second-page .min-gold, .second-page .min-silver, .second-page .min-grey {
+    display: none;
+  }
+  .second-page .under-p {
+    display: none;
+  }
+  .second-page .second-page-content .blocks {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .second-page .second-page-content h2 {
+    color: #cecece;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .second-page .second-page-content p {
+    font-family: "regular";
+    color: #86868b;
+    font-size: 19px;
+    text-align: center;
+  }
+  .second-page .second-page-content .but-bg {
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .second-page .second-page-content .buy {
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island {
+    background-color: black;
+    width: 500px;
+    border-radius: 30px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .purple-island {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .gold-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .silver-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .grey-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .head-island {
+    padding-top: 30px;
+    font-family: "semibold";
+    font-size: 40px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .second-page .second-page-content .right-side .photo {
+    width: 300px;
+    height: 254px;
+    border-radius: 30px;
+    margin-left: 20px;
+  }
+  .second-page .second-page-content .right-side .photo p {
+    color: white;
+    text-align: left;
+    padding-top: 180px;
+    margin-left: 30px;
+  }
+  .second-page .second-page-content .right-side .processor {
+    width: 300px;
+    height: 254px;
+    border-radius: 30px;
+    background-color: black;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .second-page .second-page-content .right-side .processor h3 {
+    padding-top: 30px;
+    color: transparent;
+    font-family: "semibold";
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 1.1;
+  }
+  .second-page .second-page-content .right-side .processor img {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .second-page .blocks2 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .second-page .blocks2 .left-side2 {
+    margin-top: 20px;
+    display: flex;
+  }
+  .second-page .blocks2 .left-side2 .battery {
+    width: 300px;
+    height: 254px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 0px;
+  }
+  .second-page .blocks2 .left-side2 .battery .battery-head {
+    padding-left: 30px;
+    font-family: "regular";
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .second-page .blocks2 .left-side2 .battery .battery-head span {
+    font-size: 80px;
+    line-height: 75px;
+  }
+  .second-page .blocks2 .right-side2 .film {
+    width: 500px;
+    height: 254px;
+    background-color: rebeccapurple;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-page .blocks2 .right-side2 .film h1 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-family: "regular";
+  }
+  .second-page .blocks2 .right-side2 .film h2 {
+    font-size: 20px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+  .second-page .blocks3 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .second-page .blocks3 .left-side3 {
+    margin-top: 20px;
+    display: flex;
+  }
+  .second-page .blocks3 .left-side3 .fast {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 300px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .second-page .blocks3 .left-side3 .fast .fast-video {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .second-page .blocks3 .right-side3 {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+  }
+  .second-page .blocks3 .right-side3 .always {
+    width: 500px;
+    background-color: black;
+    border-radius: 30px;
+  }
+  .second-page .blocks3 .right-side3 .always .always-head {
+    text-align: center;
+    font-family: "regular";
+    margin-top: 30px;
+  }
+  .second-page .blocks3 .right-side3 .always img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .blocks4 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .second-page .blocks4 .ceramic {
+    width: 500px;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 600px;
+  }
+  .second-page .blocks4 .ceramic h1 {
+    font-family: "regular";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .second-page .blocks4 .ceramic .ceramic-head {
+    text-align: center;
+    font-size: 50px;
+    font-family: "regular";
+    padding-top: 0;
+  }
+  .second-page .blocks4 .ceramic img {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  .second-page .blocks4 .water {
+    width: 300px;
+    margin-left: 20px;
+    background-color: #fff;
+    height: 35 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 290px;
+  }
+  .second-page .blocks4 .water h1 {
+    text-align: center;
+    font-family: "regular";
+    padding-top: 100px;
+    font-size: 50px;
+  }
+  .second-page .blocks4 .water p {
+    margin-top: 80px;
+  }
+  .second-page .blocks4 .selfie {
+    width: 300px;
+    margin-left: 20px;
+    background-color: #000000;
+    height: 35 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 290px;
+    overflow: hidden;
+  }
+  .second-page .blocks4 .selfie p {
+    color: white;
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  .second-page .blocks4 .selfie img {
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  .second-page .blocks5 {
+    width: 820px;
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  .second-page .blocks5 .top {
+    width: 100%;
+    display: flex;
+  }
+  .second-page .blocks5 .top h1 {
+    font-family: "regular";
+  }
+  .second-page .blocks5 .top .left-top {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .second-page .blocks5 .top .right-top {
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .second-page .blocks5 .bottom {
+    width: 100%;
+    display: flex;
+  }
+  .second-page .blocks5 .bottom .left-bottom {
+    width: 50%;
+  }
+  .second-page .blocks5 .bottom .left-bottom img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .blocks5 .bottom .right-bottom {
+    width: 50%;
+  }
+  .second-page .blocks5 .bottom .right-bottom img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 876px) {
+  body {
+    background-color: black;
+  }
+  .second-page {
+    background-color: #161617;
+    width: 100%;
+    margin-top: 600px;
+  }
+  .second-page .second-page-content {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    max-width: 400px;
+  }
+  .second-page .second-page-content .blocks {
+    display: flex;
+    flex-direction: column;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .second-page .second-page-content h2 {
+    color: #cecece;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .second-page .second-page-content p {
+    font-family: "regular";
+    color: #86868b;
+    font-size: 19px;
+    text-align: center;
+  }
+  .second-page .second-page-content .but-bg {
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .second-page .second-page-content .buy {
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .second-page .second-page-content .left-side {
+    width: 90vw;
+    margin-bottom: auto;
+    margin-right: auto;
+    max-width: 339px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island {
+    background-color: black;
+    width: 90vw;
+    height: 600px;
+    border-radius: 30px;
+    margin-left: auto;
+    max-width: 339px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .purple-island {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .gold-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .silver-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .grey-island {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .second-page-content .left-side .dynamic-island .head-island {
+    padding-top: 30px;
+    font-family: "semibold";
+    font-size: 40px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .second-page .second-page-content .right-side .photo {
+    width: 90vw;
+    height: 254px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 339px;
+  }
+  .second-page .second-page-content .right-side .photo p {
+    color: white;
+    text-align: left;
+    padding-top: 180px;
+    margin-left: 30px;
+  }
+  .second-page .second-page-content .right-side .processor {
+    width: 90vw;
+    height: 254px;
+    border-radius: 30px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    max-width: 339px;
+  }
+  .second-page .second-page-content .right-side .processor h3 {
+    padding-top: 30px;
+    color: transparent;
+    font-family: "semibold";
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 1.1;
+  }
+  .second-page .second-page-content .right-side .processor img {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .second-page .blocks2 {
+    width: 90vw;
+    max-width: 339px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-page .blocks2 .left-side2 {
+    margin-top: 20px;
+    display: flex;
+    width: 90vw;
+    max-width: 339px;
+  }
+  .second-page .blocks2 .left-side2 .battery {
+    max-width: 339px;
+    width: 90vw;
+    height: 254px;
+    border-radius: 30px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .second-page .blocks2 .left-side2 .battery .battery-head {
+    padding-left: 30px;
+    font-family: "regular";
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .second-page .blocks2 .left-side2 .battery .battery-head span {
+    font-size: 80px;
+    line-height: 75px;
+  }
+  .second-page .blocks2 .right-side2 .film {
+    width: 90vw;
+    max-width: 339px;
+    height: 254px;
+    background-color: rebeccapurple;
+    margin-top: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-page .blocks2 .right-side2 .film h1 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-family: "regular";
+  }
+  .second-page .blocks2 .right-side2 .film h2 {
+    font-size: 20px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+  .second-page .blocks3 {
+    width: 90vw;
+    max-width: 339px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-page .blocks3 .left-side3 {
+    margin-top: 20px;
+    display: flex;
+  }
+  .second-page .blocks3 .left-side3 .fast {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 90vw;
+    max-width: 339px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .second-page .blocks3 .left-side3 .fast .fast-video {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .second-page .blocks3 .right-side3 {
+    margin-top: 20px;
+    display: flex;
+    width: 90vw;
+    max-width: 339px;
+  }
+  .second-page .blocks3 .right-side3 .always {
+    width: 500px;
+    background-color: black;
+    border-radius: 30px;
+  }
+  .second-page .blocks3 .right-side3 .always .always-head {
+    text-align: center;
+    font-family: "regular";
+    margin-top: 30px;
+  }
+  .second-page .blocks3 .right-side3 .always img {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .blocks4 {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 90vw;
+    max-width: 339px;
+    flex-direction: column;
+  }
+  .second-page .blocks4 .ceramic {
+    width: 90vw;
+    max-width: 339px;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .second-page .blocks4 .ceramic h1 {
+    font-family: "regular";
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .second-page .blocks4 .ceramic .ceramic-head {
+    text-align: center;
+    font-size: 34px;
+    font-family: "regular";
+    padding-top: 0;
+  }
+  .second-page .blocks4 .ceramic img {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+  .second-page .blocks4 .water {
+    width: 90vw;
+    max-width: 339px;
+    background-color: #fff;
+    height: 35 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 290px;
+  }
+  .second-page .blocks4 .water h1 {
+    text-align: center;
+    font-family: "regular";
+    padding-top: 100px;
+    font-size: 50px;
+  }
+  .second-page .blocks4 .water p {
+    margin-top: 80px;
+  }
+  .second-page .blocks4 .selfie {
+    width: 90vw;
+    max-width: 339px;
+    background-color: #000000;
+    height: 35 0px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 290px;
+    overflow: hidden;
+  }
+  .second-page .blocks4 .selfie p {
+    color: white;
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  .second-page .blocks4 .selfie img {
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  .second-page .blocks5 {
+    width: 90vw;
+    max-width: 339px;
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  .second-page .blocks5 p {
+    display: none;
+  }
+  .second-page .blocks5 .under-p {
+    display: block;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .second-page .blocks5 .top {
+    width: 100%;
+    display: flex;
+  }
+  .second-page .blocks5 .top h1 {
+    font-family: "regular";
+  }
+  .second-page .blocks5 .top .left-top {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .second-page .blocks5 .top .right-top {
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .second-page .blocks5 .bottom {
+    width: 100%;
+    display: flex;
+  }
+  .second-page .blocks5 .bottom .left-bottom {
+    width: 50%;
+  }
+  .second-page .blocks5 .bottom .left-bottom img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .second-page .blocks5 .bottom .right-bottom {
+    width: 50%;
+  }
+  .second-page .blocks5 .bottom .right-bottom img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    width: 59.5%;
+  }
+  .second-page .blocks5 .max-purple, .second-page .blocks5 .max-gold, .second-page .blocks5 .max-silver, .second-page .blocks5 .max-grey {
+    display: none;
+  }
+}
+.ceramic {
+  overflow: hidden;
+}
+
+html .min-purple {
+  display: block;
+}
+html .min-gold, html .min-silver, html .min-grey {
+  display: none;
+}
+html .head-island {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+}
+html .purple-island {
+  opacity: 1;
+}
+html .gold-island {
+  margin-top: -340px;
+  opacity: 0;
+}
+html .silver-island {
+  margin-top: -340px;
+  opacity: 0;
+}
+html .grey-island {
+  margin-top: -340px;
+  opacity: 0;
+}
+html .head-processor {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+}
+html .head-island {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html .battery-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html .always-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html .always-purple {
+  margin-top: 55px;
+}
+html .always-gold, html .always-silver, html .always-grey {
+  display: none;
+}
+html .ceramic-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html .ceramic-purple {
+  margin-top: 55px;
+}
+html .ceramic-gold, html .ceramic-silver, html .ceramic-grey {
+  display: none;
+}
+html .water-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html .selfie-purple {
+  display: block;
+}
+html .selfie-gold, html .selfie-silver, html .selfiec-grey {
+  display: none;
+}
+html .inches {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html .max-purple {
+  display: block;
+}
+html .max-gold, html .max-silver, html .max-grey {
+  display: none;
+}
+
+html.purple .head-island {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html.purple .purple-island {
+  opacity: 1;
+}
+html.purple .head-processor {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+}
+html.purple .battery-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html.purple .always-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html.purple .always-purple {
+  margin-top: 55px;
+}
+html.purple .always-gold, html.purple .always-silver, html.purple .always-grey {
+  display: none;
+}
+html.purple .ceramic-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html.purple .ceramic-purple {
+  margin-top: 55px;
+  display: block;
+}
+html.purple .ceramic-gold, html.purple .ceramic-silver, html.purple .ceramic-grey {
+  display: none;
+}
+html.purple .water-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html.purple .selfie-purple {
+  display: block;
+}
+html.purple .selfie-gold, html.purple .selfie-silver, html.purple .selfiec-grey {
+  display: none;
+}
+html.purple .inches {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  color: transparent;
+}
+html.purple .max-purple {
+  display: block;
+}
+html.purple .max-gold, html.purple .max-silver, html.purple .max-grey {
+  display: none;
+}
+html.purple .min-purple {
+  display: block;
+}
+html.purple .min-gold, html.purple .min-silver, html.purple .min-grey {
+  display: none;
+}
+
+html.gold .head-island {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+  color: transparent;
+}
+html.gold .purple-island {
+  opacity: 0;
+}
+html.gold .gold-island {
+  opacity: 1;
+}
+html.gold .head-processor {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+}
+html.gold .battery-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+  color: transparent;
+}
+html.gold .always-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+  color: transparent;
+}
+html.gold .always-gold {
+  margin-top: 55px;
+  display: block;
+}
+html.gold .always-purple, html.gold .always-silver, html.gold .always-grey {
+  display: none;
+}
+html.gold .ceramic-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+  color: transparent;
+}
+html.gold .ceramic-gold {
+  margin-top: 55px;
+  display: block;
+}
+html.gold .ceramic-purple, html.gold .ceramic-silver, html.gold .ceramic-grey {
+  display: none;
+}
+html.gold .water-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+  color: transparent;
+}
+html.gold .selfie-gold {
+  display: block;
+}
+html.gold .selfie-purple, html.gold .selfie-silver, html.gold .selfiec-grey {
+  display: none;
+}
+html.gold .inches {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #ffe993, #eb831c);
+  color: transparent;
+}
+html.gold .max-gold {
+  display: block;
+}
+html.gold .max-purple, html.gold .max-silver, html.gold .max-grey {
+  display: none;
+}
+html.gold .min-gold {
+  display: block;
+}
+html.gold .min-purple, html.gold .min-silver, html.gold .min-grey {
+  display: none;
+}
+
+html.silver .head-island {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+  color: transparent;
+}
+html.silver .purple-island {
+  opacity: 0;
+}
+html.silver .gold-island {
+  opacity: 0;
+}
+html.silver .silver-island {
+  opacity: 1;
+}
+html.silver .head-processor {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+}
+html.silver .battery-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+  color: transparent;
+}
+html.silver .always-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+  color: transparent;
+}
+html.silver .always-silver {
+  margin-top: 55px;
+  display: block;
+}
+html.silver .always-purple, html.silver .always-gold, html.silver .always-grey {
+  display: none;
+}
+html.silver .ceramic-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+  color: transparent;
+}
+html.silver .ceramic-silver {
+  margin-top: 55px;
+  display: block;
+}
+html.silver .ceramic-purple, html.silver .ceramic-gold, html.silver .ceramic-grey {
+  display: none;
+}
+html.silver .water-head {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+  color: transparent;
+}
+html.silver .selfie-silver {
+  display: block;
+}
+html.silver .selfie-purple, html.silver .selfie-gold, html.silver .selfiec-grey {
+  display: none;
+}
+html.silver .inches {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #c6deff, #516cec);
+  color: transparent;
+}
+html.silver .max-silver {
+  display: block;
+}
+html.silver .max-purple, html.silver .max-gold, html.silver .max-grey {
+  display: none;
+}
+html.silver .min-silver {
+  display: block;
+}
+html.silver .min-purple, html.silver .min-gold, html.silver .min-grey {
+  display: none;
+}
+
+html.grey .head-island {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+  color: transparent;
+}
+html.grey .purple-island {
+  opacity: 0;
+}
+html.grey .gold-island {
+  opacity: 0;
+}
+html.grey .grey-island {
+  opacity: 1;
+}
+html.grey .head-processor {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+}
+html.grey .battery-head {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+}
+html.grey .always-head {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+}
+html.grey .always-grey {
+  margin-top: 55px;
+  display: block;
+}
+html.grey .always-purple, html.grey .always-gold, html.grey .always-silver {
+  display: none;
+}
+html.grey .ceramic-head {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+}
+html.grey .ceramic-grey {
+  margin-top: 55px;
+  display: block;
+}
+html.grey .ceramic-purple, html.grey .ceramic-gold, html.grey .ceramic-silver {
+  display: none;
+}
+html.grey .water-head {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+}
+html.grey .selfie-grey {
+  display: block;
+}
+html.grey .selfie-purple, html.grey .selfie-gold, html.grey .selfiec-silver {
+  display: none;
+}
+html.grey .inches {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(180deg, #dbcedb, #60657f);
+}
+html.grey .max-grey {
+  display: block;
+}
+html.grey .max-purple, html.grey .max-gold, html.grey .max-silver {
+  display: none;
+}
+html.grey .min-grey {
+  display: block;
+}
+html.grey .min-purple, html.grey .min-gold, html.grey .min-silver {
+  display: none;
+}
+
+@media screen and (min-width: 877px) {
+  html.purple .min-purple {
+    display: none;
+  }
+  html.gold .min-gold {
+    display: none;
+  }
+  html.silver .min-silver {
+    display: none;
+  }
+  html.grey .min-grey {
+    display: none;
+  }
+}
+@media screen and (min-width: 850px) {
+  .third-page {
+    background-color: #161617;
+  }
+  .third-page .third-page-content {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .third-page .third-page-content h1 {
+    font-family: "regular";
+    font-size: 50px;
+    padding-top: 120px;
+  }
+  .third-page .third-page-content .cards {
+    display: flex;
+  }
+  .third-page .third-page-content .cards .card1 {
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .cards .card1 img {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .third-page .third-page-content .cards .card1 h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .third-page .third-page-content .cards .card1 a {
+    color: #06c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-page .third-page-content .cards .card1 a:hover {
+    text-decoration: underline;
+  }
+  .third-page .third-page-content .cards .card1 .planet {
+    width: 50%;
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+  .third-page .third-page-content .cards .card2 {
+    margin-left: 5%;
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .cards .card2 img {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+  }
+  .third-page .third-page-content .cards .card2 h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .third-page .third-page-content .cards .card2 a {
+    color: #06c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-page .third-page-content .cards .card2 a:hover {
+    text-decoration: underline;
+  }
+  .third-page .third-page-content .cards .card2 .planet2 {
+    width: 80%;
+    margin-bottom: 0px;
+  }
+  .third-page .third-page-content .card3 {
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .card3 img {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .third-page .third-page-content .card3 h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .third-page .third-page-content .card3 a {
+    color: #06c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-page .third-page-content .card3 a:hover {
+    text-decoration: underline;
+  }
+  .third-page .third-page-content .card3 .planet3 {
+    width: 80%;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 849px) {
+  .third-page {
+    background-color: #161617;
+  }
+  .third-page .third-page-content {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .third-page .third-page-content .head-cards {
+    font-family: "regular";
+    font-size: 40px;
+    padding-top: 120px;
+    width: 90vw;
+    text-align: center;
+  }
+  .third-page .third-page-content .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .cards .card1 {
+    width: 90vw;
+    max-width: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .cards .card1 img {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .third-page .third-page-content .cards .card1 h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .third-page .third-page-content .cards .card1 a {
+    color: #06c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-page .third-page-content .cards .card1 a:hover {
+    text-decoration: underline;
+  }
+  .third-page .third-page-content .cards .card1 .planet {
+    width: 50%;
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+  .third-page .third-page-content .cards .card2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    max-width: 300px;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .cards .card2 img {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+  }
+  .third-page .third-page-content .cards .card2 h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .third-page .third-page-content .cards .card2 a {
+    color: #06c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-page .third-page-content .cards .card2 a:hover {
+    text-decoration: underline;
+  }
+  .third-page .third-page-content .cards .card2 .planet2 {
+    width: 80%;
+    margin-bottom: 0px;
+  }
+  .third-page .third-page-content .card3 {
+    width: 90vw;
+    max-width: 300px;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .third-page-content .card3 img {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .third-page .third-page-content .card3 h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .third-page .third-page-content .card3 a {
+    color: #06c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .third-page .third-page-content .card3 a:hover {
+    text-decoration: underline;
+  }
+  .third-page .third-page-content .card3 .planet3 {
+    width: 80%;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .fifth-page {
+    width: 100%;
+    background-color: #161617;
+  }
+  .fifth-page h1 {
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52.008px; /* 108.349% */
+    letter-spacing: -0.144px;
+    padding-top: 100px;
+  }
+  .fifth-page .iphones {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new {
+    display: flex;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car p {
+    color: #BF4800;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island img {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island .island-p {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island .about-way {
+    color: #6E6E73;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .new .iphone-14-car p {
+    color: #BF4800;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old {
+    display: flex;
+  }
+  .fifth-page .iphones .old .iphone-13-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .old .iphone-13-car p {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .old .iphone-13-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-13-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-spec span {
+    padding-top: 120px;
+    height: 100px;
+    line-height: 51px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery {
+    margin-top: 62px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .old .iphone-se-car p {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .old .iphone-se-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-se-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-spec span {
+    padding-top: 120px;
+    height: 100px;
+    line-height: 51px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery {
+    margin-top: 62px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 969px) and (min-width: 505px) {
+  .fifth-page {
+    width: 100%;
+    background-color: #161617;
+  }
+  .fifth-page h1 {
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52.008px; /* 108.349% */
+    letter-spacing: -0.144px;
+    padding-top: 100px;
+  }
+  .fifth-page .iphones {
+    display: flex;
+    width: 90vw;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .fifth-page .iphones .new {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car p {
+    color: #BF4800;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island img {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island .island-p {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island .about-way {
+    color: #6E6E73;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .new .iphone-14-car p {
+    color: #BF4800;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+  }
+  .fifth-page .iphones .old .iphone-13-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-page .iphones .old .iphone-13-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .old .iphone-13-car p {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .old .iphone-13-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-13-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-spec span {
+    padding-top: 120px;
+    height: 100px;
+    line-height: 51px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery {
+    margin-top: 62px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .img-iphone {
+    height: 257px;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .old .iphone-se-car p {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .old .iphone-se-car h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-se-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .spec {
+    color: white;
+    line-height: 50px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-name {
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-spec {
+    color: #6E6E73;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-spec span {
+    padding-top: 120px;
+    height: 100px;
+    line-height: 51px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery {
+    margin-top: 62px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 504px) {
+  .fifth-page {
+    width: 100%;
+    background-color: #161617;
+  }
+  .fifth-page h1 {
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52.008px; /* 108.349% */
+    letter-spacing: -0.144px;
+    padding-top: 100px;
+  }
+  .fifth-page .iphones {
+    display: flex;
+    width: 90vw;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  .fifth-page .iphones .new {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .img-iphone {
+    height: 50vw;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car p {
+    color: #BF4800;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .description {
+    color: black;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .spec {
+    color: white;
+    line-height: 50px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island {
+    margin-top: 25px;
+    height: 32vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island img {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island .island-p {
+    color: white;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .screen .island .about-way {
+    color: #6E6E73;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera .camera-name {
+    color: white;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .camera .camera-spec {
+    color: #6E6E73;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .battery .battery-spec {
+    color: white;
+    line-height: 5vw;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-pro-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .img-iphone {
+    height: 50vw;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .new .iphone-14-car p {
+    color: #BF4800;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-car h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car .description {
+    color: white;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .new .iphone-14-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .spec {
+    color: white;
+    line-height: 50px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .island {
+    margin-top: 25px;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .new .iphone-14-car .screen .island p {
+    color: white;
+    margin-top: 0;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera .camera-name {
+    color: white;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .camera .camera-spec {
+    color: #6E6E73;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .battery .battery-spec {
+    color: white;
+    line-height: 5vw;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .new .iphone-14-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+  }
+  .fifth-page .iphones .old .iphone-13-car {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-page .iphones .old .iphone-13-car .img-iphone {
+    height: 50vw;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .old .iphone-13-car p {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .old .iphone-13-car h2 {
+    font-size: 22px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .description {
+    color: white;
+    margin-top: 2px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-13-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .spec {
+    color: white;
+    line-height: 50px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .old .iphone-13-car .screen .island p {
+    color: white;
+    margin-top: 0;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-name {
+    color: white;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-spec {
+    color: #6E6E73;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .camera .camera-spec span {
+    padding-top: 120px;
+    height: 100px;
+    line-height: 51px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery {
+    margin-top: 62px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .battery .battery-spec {
+    font-size: 3vw;
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .processor .processor-spec {
+    color: white;
+    font-size: 3vw;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-13-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .img-iphone {
+    height: 50vw;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .colors-14-pro {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .fifth-page .iphones .old .iphone-se-car p {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .fifth-page .iphones .old .iphone-se-car h2 {
+    font-size: 22px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .description {
+    color: white;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .description span {
+    display: none;
+  }
+  .fifth-page .iphones .old .iphone-se-car .price {
+    margin-top: 25px;
+    color: white;
+  }
+  .fifth-page .iphones .old .iphone-se-car .buy {
+    color: white;
+    border-radius: 980px;
+    background: #0071E3;
+    padding: 2px 10px;
+    margin-top: 15px;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .buy:hover {
+    text-decoration: none;
+    text-align: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car a {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .line {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D7;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 1px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .spec {
+    color: white;
+    line-height: 50px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .island {
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth-page .iphones .old .iphone-se-car .screen .island p {
+    color: white;
+    margin-top: 0;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .sos .sos-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-name {
+    color: white;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-spec {
+    color: #6E6E73;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .camera .camera-spec span {
+    padding-top: 120px;
+    height: 100px;
+    line-height: 51px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery {
+    margin-top: 62px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .battery .battery-spec {
+    color: white;
+    line-height: 50px;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .processor .processor-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .safety .safety-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar {
+    margin-top: 35px;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fifth-page .iphones .old .iphone-se-car .cellar .cellar-spec {
+    color: white;
+    margin-top: 5px;
+    font-size: 3vw;
+  }
+}
+.before-footer {
+  width: 100%;
+  background-color: #161617;
+}
+.before-footer .before-footer-cont p {
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
-}
-.under-header .under-header-cont .but-under-header {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-.under-header .under-header-cont .but-under-header a {
-  margin-left: 20px;
+  color: #6E6E73;
+  font-size: 11px;
+  max-width: 1200px;
+  padding-top: 20px;
 }
 
-.rte {
-  margin-top: 20000px;
+@media screen and (min-width: 601px) {
+  .characteristics {
+    display: none;
+  }
+  .footer {
+    background-color: #161617;
+    font-family: "regular";
+  }
+  .footer .footer-content {
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    max-width: 1200px;
+    width: 90vw;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .footer-content .line {
+    width: 70vw;
+    max-width: 1200px;
+    background-color: #3b3b3e;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .footer .footer-content .last {
+    color: rgb(118, 118, 118);
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .footer .footer-content .line2 {
+    width: 70vw;
+    max-width: 1200px;
+    background-color: #3b3b3e;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .footer .footer-content .head-li {
+    margin-top: 50px;
+    font-family: "light";
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.337% */
+    letter-spacing: -0.12px;
+  }
+  .footer .footer-content .a-li {
+    color: rgb(118, 118, 118);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 7px;
+    cursor: pointer;
+  }
+  .footer .footer-content .footer-column2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .footer .footer-content .footer-column3 {
+    margin-left: 50px;
+  }
+  .footer .footer-content .footer-column4 {
+    margin-left: 50px;
+  }
+  .footer .footer-content .footer-column5 {
+    margin-left: 50px;
+  }
+  .footer .footer-content .columns {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
 }
-
-.fixed {
-  position: fixed;
+@media screen and (max-width: 600px) {
+  .footer {
+    background-color: #161617;
+  }
+  .footer .footer-content {
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    max-width: 1200px;
+    width: 90vw;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .footer-content .line2 {
+    width: 70vw;
+    max-width: 1200px;
+    background-color: #3b3b3e;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .footer .footer-content .last {
+    color: rgb(118, 118, 118);
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .footer-content .line {
+    width: 70vw;
+    max-width: 1200px;
+    background-color: #3b3b3e;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .footer .footer-content .head-li {
+    margin-top: 50px;
+    font-family: "light";
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.337% */
+    letter-spacing: -0.12px;
+    display: none;
+  }
+  .footer .footer-content .a-li {
+    color: rgb(118, 118, 118);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 7px;
+    cursor: pointer;
+    display: none;
+  }
+  .footer .footer-content .footer-column2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    display: none;
+  }
+  .footer .footer-content .footer-column3 {
+    margin-left: 50px;
+  }
+  .footer .footer-content .footer-column4 {
+    margin-left: 50px;
+  }
+  .footer .footer-content .footer-column5 {
+    margin-left: 50px;
+  }
+  .footer .footer-content .columns {
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  button, input {
+    font: inherit;
+  }
+  button {
+    cursor: pointer;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style: none;
+  }
+  h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
+  }
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  /* при работе с float */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .container7 {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 15px;
+  }
+  .main-title {
+    margin-bottom: 40px;
+  }
+  .characteristics__list {
+    max-width: 920px;
+  }
+  .characteristics__item {
+    margin-bottom: 15px;
+  }
+  .characteristics__title {
+    position: relative;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: transparent;
+    text-align: left;
+    border-style: solid;
+    border-width: 0px 0px 0 0px;
+    color: white;
+    font-family: "regular";
+  }
+  .characteristics__title:after {
+    content: "+";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    color: white;
+  }
+  .characteristics__description {
+    margin-top: -2px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0px 1px 0px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+  .characteristics__title:focus {
+    outline: none;
+  }
+  .characteristics__description.active {
+    height: auto;
+  }
+  .characteristics__item-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .characteristics__item-description {
+    padding: 15px 0;
+  }
+  .characteristics__item-description p {
+    margin: 0 15px;
+  }
+  .characteristics__item-description p:last-child {
+    text-align: right;
+  }
+  .characteristics__item-description:first-child {
+    padding-top: 30px;
+  }
+  .characteristics__item-description:last-child {
+    padding-bottom: 30px;
+  }
 }
-
 *,
 *::before,
 *::after {
@@ -611,8 +5465,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background: #161617;
   color: white;
+  overflow-x: hidden;
 }
 
 ul[class],
@@ -709,4 +5563,118 @@ h2 {
 .but-bg:hover {
   color: white;
   background-color: #177fe7;
+}
+
+html .photo {
+  background-image: url(bg/bg-purple.jpg);
+  background-size: 100%;
+}
+html .purple-proc {
+  display: block;
+}
+html .gold-proc {
+  display: none;
+}
+html .silver-proc {
+  display: none;
+}
+html .grey-proc {
+  display: none;
+}
+
+html.purple .photo {
+  background-image: url(bg/bg-purple.jpg);
+  background-size: 100%;
+}
+html.purple .purple-proc {
+  display: block;
+}
+html.purple .gold-proc {
+  display: none;
+}
+html.purple .silver-proc {
+  display: none;
+}
+html.purple .grey-proc {
+  display: none;
+}
+
+html.gold .photo {
+  background-image: url(bg/bg-gold.jpg);
+  background-size: 100%;
+}
+html.gold .purple-proc {
+  display: none;
+}
+html.gold .gold-proc {
+  display: block;
+}
+html.gold .silver-proc {
+  display: none;
+}
+html.gold .grey-proc {
+  display: none;
+}
+
+html.silver .photo {
+  background-image: url(bg/bg-silver.jpg);
+  background-size: 100%;
+}
+html.silver .purple-proc {
+  display: none;
+}
+html.silver .gold-proc {
+  display: none;
+}
+html.silver .silver-proc {
+  display: block;
+}
+html.silver .grey-proc {
+  display: none;
+}
+
+html.grey .photo {
+  background-image: url(bg/bg-grey.jpg);
+  background-size: 100%;
+}
+html.grey .purple-proc {
+  display: none;
+}
+html.grey .gold-proc {
+  display: none;
+}
+html.grey .silver-proc {
+  display: none;
+}
+html.grey .grey-proc {
+  display: block;
+}
+
+.film {
+  background-image: url(bg/bg-film.jpg);
+}
+
+.water {
+  background-image: url(bg/bg-water.jpg);
+  background-position-x: 200px;
+}
+
+h1 {
+  font-family: "regular";
+}
+
+h2 {
+  font-family: "regular";
+}
+
+h3 {
+  font-family: "regular";
+}
+
+p {
+  font-family: "regular";
+}
+
+svg {
+  fill: white;
 }/*# sourceMappingURL=styles.css.map */

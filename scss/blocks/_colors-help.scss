@@ -1,0 +1,335 @@
+html {
+    .min-purple {display: block;}
+.min-gold, .min-silver, .min-grey {display: none;}
+    .head-island {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    }
+    .purple-island {
+        opacity: 1;
+    }
+    .gold-island {
+        margin-top: -340px;
+        opacity: 0;
+    }
+    .silver-island {
+        margin-top: -340px;
+        opacity: 0;
+    }
+    .grey-island {
+        margin-top: -340px;
+        opacity: 0;
+    }
+
+    .head-processor {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    }
+    .head-island {
+        background-clip: text;
+        background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+        color: transparent;
+            }
+            .battery-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+                color: transparent;
+            }
+            .always-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+                color: transparent;
+            }
+            .always-purple {margin-top: 55px;}
+            .always-gold, .always-silver, .always-grey {display: none;}
+.ceramic-head {
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    color: transparent;
+}
+
+.ceramic-purple {margin-top: 55px;}
+            .ceramic-gold, .ceramic-silver, .ceramic-grey {display: none;}
+
+            
+
+.water-head {
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    color: transparent;
+}
+.selfie-purple {display: block;}
+            .selfie-gold, .selfie-silver, .selfiec-grey {display: none;}
+
+            .inches {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+                color: transparent;
+            }
+            .max-purple {display: block;}
+            .max-gold, .max-silver, .max-grey {display: none;}
+
+}
+
+html.purple {
+    .head-island {
+        background-clip: text;
+        background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+        color: transparent;
+            }
+            .purple-island {
+                opacity: 1;
+            }
+            .head-processor {
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+            }
+.battery-head {
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    color: transparent;
+}
+.always-head {
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    color: transparent;
+}
+.always-purple {margin-top: 55px;}
+            .always-gold, .always-silver, .always-grey {display: none;}
+
+            .ceramic-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+                color: transparent;
+            }
+            .ceramic-purple {margin-top: 55px; display: block;}
+            .ceramic-gold, .ceramic-silver, .ceramic-grey {display: none;}
+            .water-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+                color: transparent;
+            }
+
+            .selfie-purple {display: block;}
+            .selfie-gold, .selfie-silver, .selfiec-grey {display: none;}
+.inches {
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    color: transparent;
+}
+.max-purple {display: block;}
+.max-gold, .max-silver, .max-grey {display: none;}
+
+.min-purple {display: block;}
+.min-gold, .min-silver, .min-grey {display: none;}
+
+}
+html.gold {
+    .head-island {
+        background-clip: text;
+        background-image: linear-gradient(180deg,#ffe993,#eb831c);
+        color: transparent;
+            }
+            .purple-island {
+                opacity: 0;
+            }
+            .gold-island {
+                opacity: 1;
+            }
+            .head-processor {
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffe993,#eb831c);
+            }
+            .battery-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffe993,#eb831c);
+                color: transparent;
+            }
+            .always-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffe993,#eb831c);
+                color: transparent;
+            }
+            .always-gold {margin-top: 55px; display: block;}
+            .always-purple, .always-silver, .always-grey {display: none;}
+
+            .ceramic-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffe993,#eb831c);
+                color: transparent;
+            }
+            .ceramic-gold {margin-top: 55px; display: block;}
+            .ceramic-purple, .ceramic-silver, .ceramic-grey {display: none;}
+            .water-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffe993,#eb831c);
+                color: transparent;
+            }
+            .selfie-gold {display: block;}
+            .selfie-purple, .selfie-silver, .selfiec-grey {display: none;}
+            .inches {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#ffe993,#eb831c);
+                color: transparent;
+            }
+            .max-gold {display: block;}
+            .max-purple, .max-silver, .max-grey {display: none;}
+            .min-gold {display: block;}
+            .min-purple, .min-silver, .min-grey {display: none;}
+
+}
+html.silver {
+    .head-island {
+        background-clip: text;
+        background-image: linear-gradient(180deg,#c6deff,#516cec);
+        color: transparent;
+            }
+            .purple-island {
+                opacity: 0;
+            }
+            .gold-island {
+                opacity: 0;
+            }
+            .silver-island {
+             opacity: 1;
+            }
+            .head-processor {
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#c6deff,#516cec);
+            }
+            .battery-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#c6deff,#516cec);
+                color: transparent;
+            }
+            .always-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#c6deff,#516cec);
+                color: transparent;
+            }
+            .always-silver {margin-top: 55px; display: block;}
+            .always-purple, .always-gold, .always-grey {display: none;}
+
+            .ceramic-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#c6deff,#516cec);
+                color: transparent;
+            }
+            .ceramic-silver {margin-top: 55px; display: block;}
+            .ceramic-purple, .ceramic-gold, .ceramic-grey {display: none;}
+            .water-head {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#c6deff,#516cec);
+                color: transparent;
+            }
+            .selfie-silver {display: block;}
+            .selfie-purple, .selfie-gold, .selfiec-grey {display: none;}
+
+            .inches {
+                background-clip: text;
+                background-image: linear-gradient(180deg,#c6deff,#516cec);
+                color: transparent;
+            }
+            .max-silver {display: block;}
+            .max-purple, .max-gold, .max-grey {display: none;}
+            .min-silver {display: block;}
+            .min-purple, .min-gold, .min-grey {display: none;}
+
+}
+html.grey {
+    .head-island {
+        background-clip: text;
+        background-image: linear-gradient(180deg,#dbcedb,#60657f);
+        color: transparent;
+            }
+            .purple-island {
+                opacity: 0;
+            }
+            .gold-island {
+                opacity: 0;
+            }
+            .grey-island {
+                opacity: 1;
+               }
+
+               .head-processor {
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#dbcedb,#60657f);
+            }
+
+.battery-head {
+    color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#dbcedb,#60657f);
+            
+}
+.always-head {
+    color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#dbcedb,#60657f);
+}
+
+.always-grey {margin-top: 55px; display: block;}
+.always-purple, .always-gold, .always-silver {display: none;}
+
+.ceramic-head {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(180deg,#dbcedb,#60657f);
+}
+.ceramic-grey {margin-top: 55px; display: block;}
+.ceramic-purple, .ceramic-gold, .ceramic-silver {display: none;}
+.water-head {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(180deg,#dbcedb,#60657f);
+}
+            .selfie-grey {display: block;}
+            .selfie-purple, .selfie-gold, .selfiec-silver {display: none;}
+            .inches {
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(180deg,#dbcedb,#60657f);
+            }
+            .max-grey {display: block;}
+            .max-purple, .max-gold, .max-silver {display: none;}
+           
+           
+            .min-grey {display: block;}
+            .min-purple, .min-gold, .min-silver {display: none;}
+
+}
+
+
+
+@media screen and (min-width: 877px) {
+    
+html.purple {
+    .min-purple {
+        display: none;
+    }
+} 
+
+html.gold {
+
+    .min-gold {
+        display: none;
+    }
+}
+html.silver {
+    .min-silver {
+        display: none;
+    }
+}
+html.grey {
+    .min-grey {
+        display: none;
+    }
+    }
+}

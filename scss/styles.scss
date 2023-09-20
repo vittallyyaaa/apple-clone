@@ -1,6 +1,12 @@
 // IMPORT BLOCKS
 
 @import './blocks/header';
+@import './blocks/main-page';
+@import './blocks/second-page';
+@import './blocks/colors-help';
+@import './blocks/third-page';
+@import './blocks/fifth-page';
+@import './blocks/footer';
 
 
 
@@ -43,8 +49,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background: #161617;
   color: white;
+  overflow-x: hidden;
 }
 
 
@@ -176,4 +182,149 @@ h2 {
 .but-bg:hover {
     color: white;
     background-color: #177fe7;
+}
+
+  
+
+
+html {
+  .photo {
+    background-image: url(bg/bg-purple.jpg);
+    background-size: 100%;
+  }
+  .purple-proc {
+    display: block;
+  }
+  .gold-proc{
+    display: none;
+  }
+  .silver-proc{
+    display: none;
+  }
+  .grey-proc{
+    display: none;
+  }
+}
+
+html.purple {
+  .photo {
+    background-image: url(bg/bg-purple.jpg);
+    background-size: 100%;
+  }
+  .purple-proc {
+    display: block;
+  }
+  .gold-proc{
+    display: none;
+  }
+  .silver-proc{
+    display: none;
+  }
+  .grey-proc{
+    display: none;
+  }
+}
+html.gold {
+  .photo {
+    background-image: url(bg/bg-gold.jpg);
+    background-size: 100%;
+  }
+  .purple-proc {
+    display: none;
+  }
+  .gold-proc{
+    display: block;
+  }
+  .silver-proc{
+    display: none;
+  }
+  .grey-proc{
+    display: none;
+  }
+}
+
+html.silver {
+  .photo {
+    background-image: url(bg/bg-silver.jpg);
+    background-size: 100%;
+  }
+
+  .purple-proc {
+    display: none;
+  }
+  .gold-proc{
+    display: none;
+  }
+  .silver-proc{
+    display: block;
+  }
+  .grey-proc{
+    display: none;
+  }
+}
+html.grey {
+  .photo {
+    background-image: url(bg/bg-grey.jpg);
+    background-size: 100%;
+  }
+  .purple-proc {
+    display: none;
+  }
+  .gold-proc{
+    display: none;
+  }
+  .silver-proc{
+    display: none;
+  }
+  .grey-proc{
+    display: block;
+  }
+}
+
+
+
+//bG FILM
+
+
+.film {
+  background-image: url(bg/bg-film.jpg);
+}
+
+.water {
+    background-image: url(bg/bg-water.jpg);
+  
+    background-position-x: 200px;
+
+}
+
+
+
+
+
+h1 {
+  font-family: 'regular';
+
+}
+
+
+h2 {
+  font-family: 'regular';
+
+}
+
+
+h3 {
+  font-family: 'regular';
+
+}
+
+
+p {
+  font-family: 'regular';
+
+}
+
+
+svg {
+  fill: white;
 }

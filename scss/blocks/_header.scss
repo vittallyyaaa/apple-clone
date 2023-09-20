@@ -6,7 +6,7 @@
     top: 0;
     right: 0;
   }
-  
+
   .nav-container nav {
     width: 1000px;
     height: 100%;
@@ -19,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    
   }
   
   nav .desktop-nav li a {
@@ -27,6 +28,7 @@
     font-size: 14px;
     opacity: 0.8;
     transition: opacity 400ms;
+    
   }
   
   nav .desktop-nav li a:hover {
@@ -326,6 +328,7 @@
     .nav-container nav {
       width: 100%;
       padding: 0 32px;
+      
     }
   }
   
@@ -340,10 +343,11 @@
       left: 0;
       width: 100%;
       height: 0;
-      background-color: #000;
+      background-color: #1b1b1b;
+
       justify-content: start;
       overflow: hidden;
-      z-index: -1;
+      z-index: 100;
       transition: all 1000ms ease;
     }
   
@@ -388,6 +392,7 @@
       width: 100%;
       justify-content: space-between;
       list-style: none;
+      
     }
   
     nav .menu-icon-container {
@@ -396,6 +401,7 @@
       display: flex;
       align-items: center;
       cursor: pointer;
+      z-index: 200;
     }
   
     nav .menu-icon {
@@ -412,6 +418,7 @@
       transition-property: transform, top;
       transition-delay: 0ms, 160ms;
       transition-duration: 200ms;
+      z-index: 200;
     }
   
     nav .menu-icon .line-1 {
@@ -428,6 +435,7 @@
       transition-property: top, transform;
       transition-delay: 0ms, 160ms;
       transition-duration: 200ms;
+      
     }
     
     .nav-container.active nav .menu-icon-container .menu-icon .line-2 {
@@ -447,6 +455,7 @@
   
     .nav-container .mobile-nav .link-bag {
       transition: all 1000ms ease;
+      
     }
   
     /* Search Box */
@@ -477,6 +486,7 @@
       transform: rotateX(0deg);
       margin-top: 10px;
       opacity: 1;
+      
     }
   
     .mobile-search-container .link-search {
@@ -489,6 +499,7 @@
     /* Nav Move up */
     .nav-container nav.move-up {
       margin-top: -36px;
+      
     }
   
     /* Cancel Button */
@@ -586,24 +597,32 @@
 
 
   // UNDER HEADER 
-
+  @media (max-width: 1150px) {
   .under-header {
     height: 50px;
+  
     position: sticky; top: 0; left: 0;
     background: #000;
     color: #fff;
     .under-header-cont {
         display: flex;
-width: 980px;
+width: 100%;
 height: 50px;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
+z-index: 15;
+
+h2 {
+  margin-left: 30.5px;
+}
 
 .but-under-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
 margin-left: auto;
+margin-right: 30.5px;
 a {
     margin-left: 20px;
 }
@@ -621,5 +640,147 @@ a {
 .fixed {
     position: fixed;
 }
+
+
+  }
+
+
+
+  @media (min-width: 1150px) {
+    .under-header {
+      height: 50px;
+    z-index: 300;
+      position: sticky; top: 0; left: 0;
+      position: -webkit-sticky;
+      background: #000;
+      color: #fff;
+      .under-header-cont {
+          display: flex;
+  width: 980px;
+  height: 50px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  .but-under-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  margin-left: auto;
+  a {
+      margin-left: 20px;
+  }
+  }
+  
+  
+      }
+    }
+  
+    .rte {
+      margin-top: 20000px;
+    }
+  
+  
+  .fixed {
+      position: fixed;
+  }
+  
+  
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 701px) {
+  .but-not-active {
+display: none;
+  }
+  .sec-center {
+    display: block;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .sec-center {
+display: none;
+  }
+}
+
+
+
+
+// UNDER HEADER 2
+@media screen and (min-width: 1001px) {
+.under-header2 {
+  width: 100%;
+  backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(29,29,31,.72);
+    z-index: 0;
+  
+
+  p {
+    font-family: 'regular';
+    font-size: 21px;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+    span {
+      a {
+      font-size: 21px;
+      color: #2997ff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .under-header2 {
+    width: 100%;
+      background: rgba(29,29,31,.72);
+      z-index: -1; 
+      
+  p {
+    font-family: 'regular';
+    font-size: 13px;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+span {
+  a {
+  font-size: 13px;
+  color: #2997ff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+  }
+}
+}
+
+
+
+
+
+
+
+
+
 
 
